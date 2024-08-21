@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fed8ff;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 2px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px;
+}
+
+.display {
+    background: #333;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid #444;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-c {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e0e0e0;
+}
+
+.btn:active {
+    background: #ccc;
+}
+
+.btn-equal {
+    background: #4CAF50;
+    color: #fff;
+    grid-column: span 4;
+}
+
+.btn-c{
+    grid-column: span 4;
+    background: #ff5722;
+    color: white;
+}
+
+.btn-equal:hover {
+    background: #45a049;
+}
+
+.btn-zero {
+    grid-column: span 1;
+}
+.btn-p {
+    grid-column: span 2;
+}
+
+.btn-dot:hover {
+    background: #e64a19;
+}
